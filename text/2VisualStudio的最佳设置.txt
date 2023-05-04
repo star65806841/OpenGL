@@ -1,0 +1,17 @@
+1、项目位置不要在默认位置user下
+2、一个解决方案通常包含多个项目，解决方案和项目名称相同是比较罕见的。
+3、创建一个source或者src的文件夹来包含源代码头文件等，和其他使用的资源分开。
+4、显示全部设置，会显示实际硬盘的结构
+5、设置 右键项目->属性->输出目录、中间目录
+6、输出目录：$(SolutionDir)Bin\$(Platform)\$(Configuration)\
+7、中间目录：$(SolutionDir)Bin\intermediates\$(Platform)\$(Configuration)\ 
+   或者：    $(SolutionDir)Bin\intermediates\
+8、运行测试
+#include <iostream>
+
+int main() 
+{
+    std::cout << "hello" << std::endl;
+    std::cin.get();
+}
+9、运行Documentation测试
